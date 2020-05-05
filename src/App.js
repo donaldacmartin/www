@@ -8,7 +8,7 @@ import Stun from './components/stun';
 function App() {
   const pages = [
     {title: 'Home', link: '/'},
-    {title: 'Stun', link: '/stun'}
+    {title: 'IP Address', link: '/ip-address'}
   ];
 
   return (
@@ -17,7 +17,7 @@ function App() {
         <Navigation title="Donald Martin" pages={pages} />
         <Switch>
             <Route exact path="/" component={Profile} />
-            <Route exact path="/stun" component={Stun} />
+            <Route exact path="/ip-address" component={Stun} />
         </Switch>
       </HashRouter>
     </div>
